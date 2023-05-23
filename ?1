@@ -1,0 +1,23 @@
+PASS test/test.js
+  /login
+    ✓ ログインのためのリンクが含まれる (564 ms)
+    ✓ ログイン時はユーザー名が表示される (79 ms)
+  /logout
+    ✓ / にリダイレクトされる (118 ms)
+  /schedules
+    ✓ 予定が作成でき、表示される (580 ms)
+  /schedules/:scheduleId/users/:userId/candidates/:candidateId
+    ✓ 出欠が更新できる (70 ms)
+  /schedules/:scheduleId/users/:userId/comments
+    ✓ コメントが更新できる (58 ms)
+  /schedules/:scheduleId?edit=1
+    ✓ 予定が更新でき、候補が追加できる (63 ms)
+  /schedules/:scheduleId?delete=1
+    ✓ 予定に関連する全ての情報が削除できる (121 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        4.018 s, estimated 7 s
+Ran all test suites.
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?
